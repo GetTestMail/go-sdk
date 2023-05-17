@@ -27,7 +27,7 @@ func main() {
 	}
 
 	// Wait for a message to arrive
-	getTestMail, err = c.WaitForMessage(context.Background(), getTestMail.EmailAddress)
+	getTestMail, err = c.WaitForMessage(context.Background(), getTestMail.ID)
 	if err != nil {
 		panic(err)
 	}

@@ -26,6 +26,7 @@ type Message struct {
 }
 
 type GetTestMail struct {
+	ID           string    `json:"id,omitempty"`
 	EmailAddress string    `json:"emailAddress,omitempty"`
 	ExpiresAt    time.Time `json:"expiresAt,omitempty"`
 	Message      *Message  `json:"message,omitempty"`
